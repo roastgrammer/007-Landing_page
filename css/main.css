@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("/images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  body .main .general-part {
+    display: flex;
+    height: auto; }
+    body .main .general-part .first-part .one {
+      padding: 5rem 4rem; }
+      body .main .general-part .first-part .one img:last-child {
+        display: none; }
+    body .main .general-part .first-part .two {
+      padding: 0 5rem; }
+      body .main .general-part .first-part .two h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 55px;
+        width: 30%;
+        margin-bottom: 2rem; }
+        body .main .general-part .first-part .two h1 #weare {
+          font-weight: 300;
+          color: #ce9797; }
+        body .main .general-part .first-part .two h1 #comming { }
+      body .main .general-part .first-part .two h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        color: #f8bfbf;
+        width: 50%;
+        margin-bottom: 1.5rem; }
+      body .main .general-part .first-part .two .form-part form .block-1 input {
+        width: 20rem;
+        height: 3rem;
+        border-radius: 25px;
+        outline: none;
+        border: 1px solid #f8bfbf;
+        padding: 0 1rem; }
+        body .main .general-part .first-part .two .form-part form .block-1 input:focus::placeholder {
+          color: transparent; }
+        body .main .general-part .first-part .two .form-part form .block-1 input::placeholder {
+          font-family: 'Josefin Sans' , sans-serif; }
+      body .main .general-part .first-part .two .form-part form .block-2 {
+        position: relative;
+        bottom: 49px;
+        left: 250px;
+        width: 6rem;
+        height: 3rem;
+        display: flex;
+        justify-content: flex-end; }
+        body .main .general-part .first-part .two .form-part form .block-2 #s {
+          width: 1rem;
+          height: 1rem;
+          position: relative;
+          top: 15px;
+          right: 10px;
+          display: none; }
+        body .main .general-part .first-part .two .form-part form .block-2 button {
+          cursor: pointer;
+          width: 4rem;
+          border-radius: 2030px;
+          outline: none;
+          border: none;
+          background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c); }
+      body .main .general-part .first-part .two .form-part form p {
+        display: none;
+        font-family: 'Josefin Sans' ,sans-serif;
+        color: red; }
+        body .main .general-part .first-part .two .form-part form p:last-child {
+          color: green !important; }
+    body .main .general-part .three {
+      width: 90vw;
+      height: 100vh; }
+      body .main .general-part .three .img img {
+        width: 100%;
+        height: 100vh; }
+
+@media screen and (max-width: 991px) {
+  .three {
+    display: none; }
+  .one img:first-child {
+    margin-bottom: 4rem; }
+  .one img:last-child {
+    display: block !important;
+    width: 80%;
+    margin: auto; }
+  .two {
+    padding: 0 !important; }
+    .two h1 {
+      width: 100% !important;
+      text-align: center; }
+    .two h3 {
+      width: 50% !important;
+      text-align: center;
+      display: block;
+      margin: auto;
+      margin-bottom: 4rem !important; }
+    .two .form-part {
+      display: block !important; }
+      .two .form-part form input {
+        display: block;
+        margin: 0 auto; }
+      .two .form-part form .block-2 {
+        display: block;
+        margin: 0 auto;
+        left: 120px !important; } }
+
+@media screen and (max-width: 767px) {
+  .one {
+    padding: 0 !important; }
+    .one img:first-child {
+      padding: 2rem;
+      margin-bottom: 0 !important; }
+    .one img:last-child {
+      width: 100% !important;
+      height: 400px !important;
+      margin-bottom: 4rem; }
+  .two {
+    padding: 0 !important; }
+    .two h3 {
+      width: 100% !important; }
+  .form-part {
+    display: block !important;
+    margin: 0 auto;
+    width: 100% !important; } }
+
+@media screen and (max-width: 585px) {
+  .form-part {
+    width: 90% !important; }
+    .form-part form input {
+      width: 100% !important;
+      margin-bottom: 1rem !important; }
+    .form-part form .block-2 {
+      display: flex !important;
+      justify-content: flex-end;
+      width: 100% !important;
+      position: static !important; } }
