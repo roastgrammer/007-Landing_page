@@ -6,72 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base Aparel</title>
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <div class="main">
-        <div class="general-part">
-            <div class="first-part">
-                <div class="one">
-                    <img src="https://raw.githubusercontent.com/roastgrammer/base-apparel/8c9070d28f8161e6e3de086f1f75e22a7eae7f6d/images/logo.svg" alt="logo">
-                    <img src="https://raw.githubusercontent.com/roastgrammer/base-apparel/main/images/hero-mobile.jpg" alt="hero-mobile">
-                </div>
-                <div class="two">
-                    <h1><span id="weare">WE'RE</span> <span id="comming">COMMING SOON</span></h1>
-                    <h3>Hello fellow shoppers! We're currently building our new
-                        fashion store.Add your email below to stay up-to-date with
-                        announcements and our launch deals.
-                    </h3>
-                    <div class="form-part">
-                        <form action="#">
-                            <div class="block-1">
-                                <input type="" autocomplete="off" placeholder="Email Address" id="inp">
-                            </div>
-                            <div class="block-2">
-                                <img src="https://raw.githubusercontent.com/roastgrammer/base-apparel/8c9070d28f8161e6e3de086f1f75e22a7eae7f6d/images/icon-error.svg" id="s" alt="">
-                                <button type="button" onclick="validsystem();">
-                                    <img src="https://raw.githubusercontent.com/roastgrammer/base-apparel/8c9070d28f8161e6e3de086f1f75e22a7eae7f6d/images/icon-arrow.svg" alt="">
-                                </button>
-                            </div>
-                            <p id="notvalid">not Valie</p>
-                            <p id="valid">Done</p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="three">
-                <div class="img">
-                    <img src="https://github.com/roastgrammer/base-apparel/blob/main/images/hero-desktop.jpg?raw=true" alt="bg-img">
-                </div>
+        <div class="text">
+            <img src="images/brand.svg" alt="brand">
+            <h1><span>WE'RE</span> COMMING SOON</h1>
+            <img src="images/person-m.jpg" alt="mobile version" id="mobile">
+            <p>Hello fellow shoppers! We're currently building our new fashion store.Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <div class="form">
+                <input type="text" placeholder="Example@gmail.com">
+                <a href="#">
+                    <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                </a>
             </div>
         </div>
+        <div class="cover">
+            <img src="images/person.jpg" alt="person">
+        </div>
     </div>
-
-    <script>
-        function validsystem() {
-    var erro_icon = document.getElementById('s');
-    var inp = document.getElementById('inp');
-    var red_p = document.getElementById('notvalid');
-    var green_p = document.getElementById('valid');
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    
-    if(inp.value.match(regexEmail)){
-        inp.value = '';
-        green_p.style.display = 'block';
-        setTimeout(()=>{
-        green_p.style.display = 'none';
-        }, 1000)
-    }else {
-        erro_icon.style.display = 'block';
-        red_p.style.display = 'block';
-        
-        setTimeout(() => {
-            erro_icon.style.display = 'none';
-            inp.value = '';
-            red_p.style.display = 'none';
-        }, 1000);
-    }
-;}
-        
-    </script>
 </body>
 </html>
